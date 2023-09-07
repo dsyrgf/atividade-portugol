@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+  caracter opcao
+  
+  real fator1
+  real result
+
+  escreva("conversao de temperatura\n")
+  escreva("precione 1 pra converte graus celsuis para fahrenheit\n")
+  escreva("precione 2 pra converte graus fahrenheit pra celsuis\n")
+  escreva("resposta: ")
+  leia(opcao)
+
+  se(opcao == 1) {
+  escreva(" digite a temperatura em °C\n ")
+   escreva("resposta: ")
+   leia(fator1)
+   escreva("o resultado é ",(fator1  * 9/5) + 32 ) 
+  }
+   se(opcao == 2) {
+  escreva(" digite a temperatura em °F\n ")
+   escreva("resposta: ")
+   leia(fator1)
+   escreva("o resultado é ",( fator1 - 32) * 5/9) 
+  }
+  }
+ }
